@@ -4,7 +4,7 @@ export default function Layout() {
   return (
     <Stack
       screenOptions={{
-        headerTitle: "Todo App",
+        headerTitle: "Tasks",
       }}
     />
   );
