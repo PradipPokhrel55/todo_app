@@ -1,11 +1,14 @@
 import { Stack } from "expo-router";
+import { TodoProvider } from "@/context/TodoContext";
 
 export default function Layout() {
   return (
-    <Stack
-      screenOptions={{
-        headerTitle: "Tasks",
-      }}
-    />
+    <TodoProvider>
+      <Stack
+        screenOptions={{
+          headerTitle: "Tasks",
+        }}
+      />
+    </TodoProvider>
   );
 }

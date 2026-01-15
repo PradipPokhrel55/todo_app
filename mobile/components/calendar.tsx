@@ -9,7 +9,7 @@ export default function StreakCalendar({ completedDates }: Props) {
   const markedDates = completedDates.reduce((acc, date) => {
     acc[date] = {
       selected: true,
-      selectedColor: '#22c55e', // green
+      selectedColor: '#22c55e',
     };
     return acc;
   }, {} as any);
